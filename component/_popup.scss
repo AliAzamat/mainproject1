@@ -1,0 +1,84 @@
+.popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: transparent;
+  transform: scale(0);
+  transition: 0.3s;
+  &__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  &.active{
+    transform: scale(1);
+    background: rgba(225, 225, 225, 0.56);
+  }
+  &-body {
+    margin: auto;
+    background: #f4f7fa;
+    box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+    border-radius: 10px;
+    padding: 64px 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &__close {
+      position: absolute;
+      top: 14px;
+      right: 24px;
+      svg {
+        &:hover {
+          cursor: pointer;
+          path {
+            transition: 0.5s;
+            fill: $bg-blue;
+          }
+        }
+      }
+    }
+    h3 {
+      @include font(24px, 30px, bold);
+      width: 60%;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 24px;
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      background: #fefefe;
+      border: 1px solid #e4e4e4;
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding: 15px 0 15px 20px;
+      margin-bottom: 8px;
+      width: 45%;
+      &:last-of-type {
+        margin-bottom: 24px;
+        padding: 15px 0 15px 21px;
+      }
+      input {
+        @include font(14px, 150%);
+        border: none;
+        outline: none;
+      }
+      input::placeholder {
+        color: #000;
+      }
+    }
+    &__button {
+      @include button(16px 32px);
+      color: #fff;
+      @include font(16px, 18px, bold);
+    }
+  }
+}
