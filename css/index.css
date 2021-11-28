@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.support {
+  max-width: 1520px;
+  margin: auto;
+}
+
 .support__title {
   margin-top: 100px;
   margin-bottom: 30px;
@@ -52,6 +57,11 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
+}
+
+.advantage {
+  max-width: 1520px;
+  margin: auto;
 }
 
 .advantage__content {
@@ -191,6 +201,8 @@
 }
 
 .team {
+  max-width: 1520px;
+  margin: auto;
   margin-top: 144px;
   margin-bottom: 144px;
 }
@@ -228,7 +240,9 @@
 }
 
 .policy {
-  max-width: 90%;
+  max-width: 1370px;
+  margin: auto;
+  width: 100%;
   margin: auto;
 }
 
@@ -374,8 +388,10 @@
 }
 
 .header {
+  max-width: 1370px;
   margin: auto;
-  max-width: 90%;
+  margin: auto;
+  width: 100%;
 }
 
 .header__row {
@@ -460,6 +476,11 @@
   font-size: 16px;
   line-height: 19px;
   color: #3b1d8f;
+}
+
+.tariffs {
+  max-width: 1520px;
+  margin: auto;
 }
 
 .tariffs__title {
@@ -693,6 +714,8 @@
 }
 
 .partner {
+  max-width: 1520px;
+  margin: auto;
   margin-top: 125px;
   padding: 90px 850px 205px 200px;
   background-image: url(/img/partners.jpg);
@@ -715,6 +738,8 @@
 }
 
 .offers {
+  max-width: 1520px;
+  margin: auto;
   margin-top: 75px;
 }
 
@@ -951,6 +976,8 @@
 }
 
 .forecast {
+  max-width: 1520px;
+  margin: auto;
   margin-bottom: 144px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1009,6 +1036,11 @@
   font-size: 14px;
   line-height: 20px;
   color: #fff;
+}
+
+.expert {
+  max-width: 1520px;
+  margin: auto;
 }
 
 .expert .container {
@@ -1112,6 +1144,8 @@
 }
 
 .footer {
+  max-width: 1520px;
+  margin: auto;
   padding-top: 32px;
 }
 
