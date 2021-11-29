@@ -693,6 +693,11 @@
 }
 
 .cabinet__caption {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 40px;
   margin-right: 16px;
 }
 
@@ -710,7 +715,7 @@
   color: #fff;
   display: block;
   margin: auto;
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .partner {
