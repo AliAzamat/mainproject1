@@ -3,6 +3,22 @@
   margin: auto;
   margin-top: 144px;
   margin-bottom: 144px;
+  &__info{
+    position: relative;
+  }
+  &__wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    &_down{
+      display: flex;
+      width: 80%;
+      margin-left: 30px;
+      margin-top: 17px;
+    }
+  }
   &__content {
     display: flex;
     justify-content: space-between;
@@ -12,27 +28,42 @@
     padding-top: 32px;
     width: 70%;
   }
-  // &__item {
-  //   padding: 32px 32px;
-  //   display: inline-block;
-  //   background: linear-gradient(236.29deg, #ffffff 29.99%, #f4f9ff 79.17%);
-  //   box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
-  //   border-radius: 10px;
-  // }
-  // &__title{
-  //   @include font(48px,44px,700);
-  // }
-  // &__description{
-  //   width: 100%;
-  //   padding-top: 8px;
-  //   @include font(14px,150%);
-  // }
+  &__item {
+    max-width: 200px;
+    margin-right: 25px;
+    padding: 32px 32px;
+    background: linear-gradient(236.29deg, #ffffff 29.99%, #f4f9ff 79.17%);
+    box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+    border-radius: 10px;
+    &_pad{
+      margin-right: 25px;
+      max-height: 145px;
+      max-width: 180px;
+      padding: 24px 24px;
+      background: linear-gradient(236.29deg, #ffffff 29.99%, #f4f9ff 79.17%);
+      box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+      border-radius: 10px;
+    }
+  }
+  &__title{
+    @include font(48px,44px,700);
+    @include gradient;
+    &_name{
+      font-size: 16px;
+      @include gradient;
+    }
+  }
+  &__description{
+    width: 100%;
+    padding-top: 8px;
+    @include font(14px,150%);
+  }
   .description {
-    width: 60%;
+    width: 65%;
   }
 }
 .small{
-  @include font(16px,150%,700);
+  @include font(12px,150%,700);
 }
 .description {
   padding-top: 16px;
