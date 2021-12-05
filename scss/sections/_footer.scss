@@ -99,11 +99,20 @@
         flex-direction: column-reverse;
         span{
           text-align: center;
+          margin: auto;
+          width: 100%;
         }
         span:first-of-type{
+          margin: auto;
+          width: 70%;
           margin-top: 32px;
           margin-bottom: 10px;
         }
+      }
+      &__row{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
       }
     }
   }
