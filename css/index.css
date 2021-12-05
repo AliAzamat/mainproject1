@@ -1893,6 +1893,13 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .footer-end__wrapper span {
+    text-align: center;
+  }
+  .footer-end__wrapper span:first-of-type {
+    margin-top: 32px;
+    margin-bottom: 10px;
+  }
 }
 
 .popup {
