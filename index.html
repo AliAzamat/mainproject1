@@ -28,6 +28,16 @@
           <p class="header__number">8 (800) 511-37-68</p>
           <button class="header__button" id="open-popup">Войти</button>
         </div>
+        <div class="header-info-mobile">
+          <div class="header-info-mobile__phone">
+            <img src="./img/smartphone.svg" alt="">
+          </div>
+          <div class="header-info-mobile__burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
     </header>
     <div class="popup" id="popup">
@@ -788,13 +798,15 @@
                   </defs>
                 </svg>
                 <div class="team__wrapper">
-                  <div class="team__item">
-                    <h6 class="team__title">100+<span class="small">тыс</span></h6>
-                    <p class="team__description">Клиентов по всему миру</p>
-                  </div>
-                  <div class="team__item_pad">
-                    <h6 class="team__title">15<span class="small">лет</span></h6>
-                    <p class="team__description">Опытных юристов в штате</p>
+                  <div class="team__wrapper_top">
+                    <div class="team__item">
+                      <h6 class="team__title">100+<span class="small">тыс</span></h6>
+                      <p class="team__description">Клиентов по всему миру</p>
+                    </div>
+                    <div class="team__item_pad">
+                      <h6 class="team__title">15<span class="small">лет</span></h6>
+                      <p class="team__description">Опытных юристов в штате</p>
+                    </div>
                   </div>
                   <div class="team__wrapper_down">
                     <div class="team__item_pad">
@@ -1268,7 +1280,7 @@
             <div class="tariffs__wrapper">
               <div class="tariffs__item">
                 <h4 class="start__header">Стандарт</h4>
-                <p class="start__descr">Для физических лиц</p>
+                <span class="start__descr">Для физических лиц</span>
                 <h5 class="start__caption">$28/месяц</h5>
                 <h5 class="start__caption">Для Вас доступно</h5>
                 <div class="feature">
@@ -1308,7 +1320,7 @@
               </div>
               <div class="tariffs__item">
                 <h4 class="start__header">Бизнес-консультант</h4>
-                <p class="start__descr">Для частных лиц и фрилансеров</p>
+                <span class="start__descr">Для частных лиц и фрилансеров</span>
                 <h5 class="start__caption">$38/месяц</h5>
                 <h5 class="start__caption">Для Вас доступно</h5>
                 <div class="feature">
@@ -1348,7 +1360,7 @@
               </div>
               <div class="tariffs__item">
                 <h4 class="start__header">бизнес-премиум</h4>
-                <p class="start__descr">Для среднего бизнеса</p>
+                <span class="start__descr">Для среднего бизнеса</span>
                 <h5 class="start__caption">$49/месяц</h5>
                 <h5 class="start__caption">Для Вас доступно</h5>
                 <div class="feature">
@@ -1390,7 +1402,7 @@
               </div>
               <div class="tariffs__item">
                 <h4 class="start__header">международный бизнес</h4>
-                <p class="start__descr">Для ведения бизнеса за рубежом</p>
+                <span class="start__descr">Для ведения бизнеса за рубежом</span>
                 <h5 class="start__caption">$98/месяц</h5>
                 <h5 class="start__caption">Для Вас доступно</h5>
                 <div class="feature">
@@ -1554,19 +1566,19 @@
         <div class="forecast">
           <h2 class="forecast__title">Прогнозы партнерской программы на 2021 год</h2>
           <div class="forecast__row">
-            <div class="forecast-info">
+            <div class="forecast-info forecast-info_first">
               <h5>$2 млн.</h5>
               <span class="forecast-info__description"><span>Заработают</span> партнеры ILC</span>
             </div>
-            <div class="forecast-info">
+            <div class="forecast-info forecast-info_second">
               <h5>10 000+</h5>
-              <span class="forecast-info__description"><span>Полисов будет оформлено</span>по партнерским ссылкам</span>
+              <span class="forecast-info__description forecast-info__description_second"><span>Полисов будет оформлено</span>по партнерским ссылкам</span>
             </div>
-            <div class="forecast-info">
+            <div class="forecast-info forecast-info_third">
               <h5>800+</h5>
-              <span class="forecast-info__description"><span>Партнеров</span>присоединится к нам</span>
+              <span class="forecast-info__description forecast-info__description_third"><span>Партнеров</span>присоединится к нам</span>
             </div>
-            <div class="forecast-info">
+            <div class="forecast-info forecast-info_fourth">
               <h5>$1500</h5>
               <span class="forecast-info__description"><span>Средний доход</span>партнера в месяц</span>
             </div>
@@ -1577,9 +1589,7 @@
         <section class="expert">
           <div class="container">
             <div class="expert-item">
-              <div class="col-4">
-                <img src="./img/expert.png" alt="" class="expert__img">
-              </div>
+              <img src="./img/expert.png" alt="" class="expert__img">
               <div class="expert-quote">
                 <p class="expert-quote__description">Я лично буду поддерживать вас на всех этапах развития в программе.
                   Обращайтесь ко мне
@@ -1605,7 +1615,7 @@
         </section>
       </section>
     </main>
-    <hr>
+    <!-- <hr> -->
     <footer class="footer">
       <div class="footer__row">
         <div class="footer__content">

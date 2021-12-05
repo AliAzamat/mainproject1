@@ -1,6 +1,7 @@
 .footer {
   max-width: 1520px;
   margin: auto;
+  border-top: 1px solid #959ba3;
   &__row {
     display: flex;
     justify-content: space-between;
@@ -46,6 +47,51 @@
       margin-right: 16px;
       &:last-of-type {
         margin-right: 0;
+      }
+    }
+  }
+}
+
+.footer{
+  @include mobile{
+    &__row{
+      flex-direction: column;
+    }
+    &__content{
+      display: flex;
+      flex-direction: column;
+      .logo{
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        img{
+          width: 75px;
+        }
+      }
+    }
+    &__description{
+      width: 100%;
+      margin-top: 16px;
+      text-align: center;
+      width: 90%;
+      margin-bottom: 32px;
+    }
+    &-media{
+      margin-top: 32px;
+      display: flex;
+      margin: auto;
+      &__item{
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        img{
+          width: 60px;
+          height: 20px;
+        }
       }
     }
   }

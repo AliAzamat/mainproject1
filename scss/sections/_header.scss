@@ -18,18 +18,21 @@
   }
   &__description {
     width: 40%;
-    @include font(12px, 20px,);
+    @include font(12px, 20px);
     color: $text-black;
   }
   &__number {
     margin-right: 35px;
-    @include font(16px, 18px,bold);
+    @include font(16px, 18px, bold);
     color: $text-black;
   }
   &__button {
     @include button(16px 32px);
-    @include font(16px, 18px,bold);
+    @include font(16px, 18px, bold);
     color: $text-white;
+  }
+  &-info-mobile{
+    display: none;
   }
 }
 .logo {
@@ -45,5 +48,60 @@
     font-size: 16px;
     line-height: 19px;
     color: #3b1d8f;
+  }
+}
+
+.header {
+  @include mobile {
+    width: 337px;
+    &__description {
+      display: none;
+    }
+    &__info {
+      display: none;
+    }
+    .logo {
+      &__img {
+        width: 40px;
+        height: 30px;
+      }
+      &__description {
+        font-size: 7px;
+        line-height: 9px;
+        width: 45%;
+        padding-left: 10px;
+      }
+    }
+    &-info-mobile {
+      display: block;
+      display: flex;
+      &__phone {
+        background: linear-gradient(326.06deg, #2641d1 11.53%, #3333a3 74.32%);
+        border-radius: 7px;
+        padding: 11px 20px 14px 20px;
+        margin-right: 8px;
+      }
+      &__burger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: #dee6ef;
+        border-radius: 7px;
+        span{
+          display: inline-block;
+          width: 22px;
+          height: 2px;
+          background: #4614E8;
+          margin-bottom: 5px;
+          border-radius: 7px;
+          &:last-of-type{
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
   }
 }

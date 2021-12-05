@@ -89,7 +89,7 @@
       background: #ffffff;
       box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
       border-radius: 20px;
-      p{
+      p {
         width: 92%;
       }
     }
@@ -98,11 +98,11 @@
       margin-bottom: 16px;
       width: 32.5%;
       padding-right: 0;
-      height:fit-content;
+      height: fit-content;
       background: #ffffff;
       box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
       border-radius: 20px;
-      p{
+      p {
         width: 98%;
       }
     }
@@ -115,11 +115,11 @@
       @include font(14px, 20px);
     }
     &__img {
-        padding-top: 47px;
+      padding-top: 47px;
       padding-bottom: 32px;
-      img{
-          display: block;
-          margin: auto;
+      img {
+        display: block;
+        margin: auto;
       }
     }
     &__button {
@@ -138,5 +138,74 @@
   }
   .number {
     @include font(14px, 30px, 700);
+  }
+}
+
+.offers {
+  @include mobile {
+    &-item {
+      padding: 24px 24px;
+      flex-direction: column;
+      img {
+        width: 200px;
+        margin: auto;
+        margin-top: 24px;
+      }
+      &__title {
+        text-align: center;
+        margin-top: 16px;
+      }
+      &__text {
+        margin-left: 0;
+        p {
+          text-align: center;
+          width: 100%;
+        }
+        &_far {
+          margin-left: 0;
+          p {
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.plan {
+  @include mobile {
+    &__title {
+      margin-top: 72px;
+      margin-bottom: 24px;
+    }
+    &-wrapper {
+      &__table {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
+    &-item {
+      width: 100%;
+      margin-bottom: 8px;
+      &_column{
+        margin-bottom: 0;
+        &:first-of-type{
+          margin-bottom: 8px;
+        }
+      }
+      &__button{
+        width: 90%;
+      }
+      &_right {
+        width: 100%;
+        p{
+          width: 90%;
+        }
+      }
+      &__img{
+        padding-top: 5px;
+      }
+    }
   }
 }

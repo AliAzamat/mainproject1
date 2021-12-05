@@ -8,10 +8,10 @@
     @include font(16px, 150%, 700);
     color: $text-black;
   }
-  &__row{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   &__item {
     display: inline-block;
@@ -26,13 +26,35 @@
       margin-bottom: 0;
     }
   }
-  &__img{
-      display: block;
-      margin: auto;
+  &__img {
+    display: block;
+    margin: auto;
   }
-  &__description{
-      margin-top: 16px;
-      @include font(14px,150%);
-      
+  &__description {
+    margin-top: 16px;
+    @include font(14px, 150%);
+  }
+}
+
+.support {
+  @include mobile {
+    &__title {
+      margin-bottom: 24px;
+    }
+    &__row {
+      flex-direction: column;
+    }
+    &__item {
+      width: 351px;
+      padding: 24px 24px;
+      margin-right: 0px;
+      margin-bottom: 8px;
+      h4 {
+        text-align: center;
+      }
+    }
+    &__description {
+      text-align: center;
+    }
   }
 }
