@@ -94,5 +94,10 @@
         }
       }
     }
+    &-end{
+      &__wrapper{
+        flex-direction: column-reverse;
+      }
+    }
   }
 }
