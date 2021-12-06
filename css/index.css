@@ -1814,6 +1814,10 @@
   width: 90%;
 }
 
+.footer-end__row .br {
+  display: none;
+}
+
 .footer-end span {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -1913,6 +1917,9 @@
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+  .footer-end__row .br {
+    display: block;
   }
 }
 

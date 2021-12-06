@@ -27,7 +27,7 @@
       border-radius: 10px;
       display: inline-block;
       transition: 0.3s;
-      &:hover{
+      &:hover {
         background: rgb(241, 240, 240);
       }
     }
@@ -41,6 +41,11 @@
       justify-content: space-between;
       width: 90%;
     }
+    &__row{
+      .br{
+        display: none
+      }
+    }
     span {
       @include font(12px, 20px);
       color: #7a7a7a;
@@ -52,35 +57,35 @@
   }
 }
 
-.footer{
-  @include mobile{
-    &__row{
+.footer {
+  @include mobile {
+    &__row {
       flex-direction: column;
     }
-    &__content{
+    &__content {
       display: flex;
       flex-direction: column;
-      .logo{
+      .logo {
         text-align: center;
         width: 100%;
         justify-content: center;
-        img{
+        img {
           width: 75px;
         }
       }
     }
-    &__description{
+    &__description {
       width: 100%;
       margin-top: 16px;
       text-align: center;
       width: 90%;
       margin-bottom: 32px;
     }
-    &-media{
+    &-media {
       margin-top: 32px;
       display: flex;
       margin: auto;
-      &__item{
+      &__item {
         width: 45px;
         height: 45px;
         padding: 0;
@@ -88,31 +93,34 @@
         justify-content: center;
         align-items: center;
         margin-right: 10px;
-        img{
+        img {
           width: 60px;
           height: 20px;
         }
       }
     }
-    &-end{
-      &__wrapper{
-        flex-direction: column-reverse;
-        span{
-          text-align: center;
-          margin: auto;
-          width: 100%;
-        }
-        span:first-of-type{
-          margin: auto;
-          width: 70%;
-          margin-top: 32px;
-          margin-bottom: 10px;
-        }
+    &-end {
+      &__wrapper {
+          flex-direction: column-reverse;
+          span {
+            text-align: center;
+            margin: auto;
+            width: 100%;
+          }
+          span:first-of-type {
+            margin: auto;
+            width: 70%;
+            margin-top: 32px;
+            margin-bottom: 10px;
+          }
       }
-      &__row{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+      &__row {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          .br{
+            display: block;
+          }
       }
     }
   }
